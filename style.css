@@ -1,0 +1,121 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+background: linear-gradient(to bottom,rgb(86, 247, 247),rgb(19, 131, 151));
+width: 100vw;
+height: 100vh;
+}
+.clock{
+    border: 5px solid black;
+    width: 300px;
+    height: 300px;
+    margin:10vh auto;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.808);
+    position: relative;
+}
+.cover{
+    position: absolute;
+    width: 15px ;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+    right:calc((100% - 16px)/2);
+    top:calc((100% - 12px)/2);
+}
+.clock .number{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.clock .bar{
+    transform-origin: bottom;
+    right:calc((100% - 4px)/2);
+    width: 4px;
+    height: 50%;
+    background-color: black;
+    position: absolute;
+}
+.bar.hour{
+    height: 30%;
+    top: 61px;
+    background-color: black;
+    transform: rotate(100deg);
+}
+.bar.second{
+    width: 2px;
+    background-color: rgb(206, 40, 68);
+    transform: rotate(240deg);
+}
+
+
+.number1{
+    transform: rotate(30deg);
+}
+.number2{
+    transform: rotate(60deg);
+}
+.number3{
+    transform: rotate(90deg);
+}
+.number4{
+    transform: rotate(120deg);
+}
+.number5{
+    transform: rotate(150deg);
+}
+.number6{
+    transform: rotate(180deg);
+}
+.number7{
+    transform: rotate(210deg);
+}
+.number8{
+    transform: rotate(240deg);
+}
+.number9{
+    transform: rotate(270deg);
+}
+.number10{
+    transform: rotate(300deg);
+}
+.number11{
+    transform: rotate(330deg);
+}
+.show{
+    text-align: center;
+    width: fit-content;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    margin:2vh auto;
+    border: 1px solid black;
+}
+.show:hover{
+    text-align: center;
+    width: fit-content;
+    background: linear-gradient(to right,rgb(176, 47, 236),rgb(112, 6, 116));
+    padding: 5px;
+    margin:2vh auto;
+    border: 1px solid black;
+}
+.show.hide{
+    display: none;
+}
+.message{
+    display: none;
+    color: rgb(251, 255, 0);
+    margin-top: 5vh;
+    text-align: center;
+}
+.message.messageshow{
+    display: block;
+}
+.wasted{
+    text-align: center;
+    
+}
